@@ -1,4 +1,4 @@
-body {
+﻿body {
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -26,9 +26,11 @@ h2 {
 }
 
 .container {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
-  outline: 2px solid green;
+  
+  /* для оформления схемы */
+  background: rgba(255, 191, 0, 0.5);
 }
 
 .clearfix:after {
@@ -37,96 +39,157 @@ h2 {
   clear: both;
 }
 
-<!-- HEADER -->
+/* ------------ HEADER ------------ */
 .main-header {
-  padding: 5px 0;
+  margin-bottom: 60px;
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 1);
 }
 
 .main-navigation {
   float: left;
-  padding-left: 125px;
-  width: 613px;
+  width: 640px;
+  padding: 25px 10px;
+  
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 0.5);
 }
 
 .user-block {
   float: right;
-  padding-right: 125px;
   width: 65px;
+  padding: 25px 10px;
+  
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 0.5);
 }
 
-<!-- MAIN -->
+/* ------------ MAIN (CATALOG)------------ */
 .catalog-header {
-  width: 300px;
-  padding-left: 125px;
+  width: 940px;
+  padding: 0px 10px;
+  
+  /* для оформления схемы */
+  background: rgba(13, 186, 255, 0.5);
 }
 
 .main-content {
+  width: 960px;
   margin: 30px auto;
-  padding-left: 125px;
-  
 }
 
 .catalog-sidebar {
   float: left;
   width: 168px; 
-  min-height: ;
-  outline: 1px solid red;
+  padding: 0 10px;
+  
+  /* для оформления схемы */
+  background: rgba(13, 186, 255, 0.5);
 }
 
 .catalog-content {
   float: right;
-  width: 500px;
-  margin-left: 5px;
-  outline: 3px solid black;
-}
-
-.item-wraper {
-  padding-left: 125px;
-  outline: 1px solid blue;
+  width: 720px;
+  
+  /* для оформления схемы */
+  background: rgba(13, 186, 255, 0.5);
 }
 
 .item {
-  float: left;
+  display: inline-block;
   width: 220px;
-  margin-right: 10px;
-  border-width: 5px;
-  outline: 1px solid red;
+  border: 10px solid transparent; /* не работает */
+  vertical-align: top;
+  
+  background: rgba(215, 127, 173, 0.4);
+  border: 1px solid rgba(97, 201, 205, 0.8);
 }
-.item-wraper .item:last-child {
+.item:nth-child(3n) {
   margin-right: 0;
+} 
+
+
+/* ------------ MAIN (ITEM)------------ */
+.item-header {
+  width: 940px;
+  padding: 0px 10px;
+  
+  /* для оформления схемы */
+  background: rgba(13, 186, 255, 0.5);
 }
 
-.pager {
-  clear: both;
+.left-col {
+  float: left;
+  width: 460px;
+  padding: 0 10px;
+  
+  /* для оформления схемы */
+  background: rgba(13, 186, 255, 0.5);
 }
 
-<!-- FOOTER -->
-.main-footer {
- 
+.right-col {
+  float: right;
+  width: 370px;
+  padding: 0 10px;
+  
+  /* для оформления схемы */
+  background: rgba(13, 186, 255, 0.5);
 }
+
+/*
+.small-img {
+  display: inline-block;
+  width: 140px;
+  margin-right: 20px;
+  vertical-align: top;
+  
+  background: rgba(215, 127, 173, 0.4);
+}
+.small-img:nth-child(3n) {
+  margin-right: 0;
+} */
+
+/*------------ FOOTER ------------*/
 
 .footer-contacts .footer-social .footer-copyright {
-  min-height: 50px;
+  min-height: 90px;
 }
 
-.footer-contacts  {
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 37px;
+  
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 0.5);
+}
+
+.footer-contacts {
   float: left;
-  margin-right: 90px;
-  width: 230px;
-  outline: 1px solid red;
+  width: 310px;
+  padding: 0 10px;
+  margin-right: 70px;
+  
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 0.5);
 }
 
 .footer-social {
   float: left;
-  margin-right: 25px;
-  width: 180px;
-  outline: 1px solid red;
+  width: 140px;
+  padding: 0 10px;
+  margin-right: 240px;
+  
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 0.5);
 }
 
 .footer-copyright {
-  float: right;
-  width: 200px;
-  outline: 1px solid red;
+  float: left;
+  width: 140px;
+  padding: 0 10px;
+  
+  /* для оформления схемы */
+  background: rgba(255, 186, 255, 0.5);
 }
 
 
