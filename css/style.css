@@ -26,8 +26,9 @@ h2 {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
   
   /* для оформления схемы */
   background: rgba(255, 191, 0, 0.5);
@@ -42,55 +43,67 @@ h2 {
 /* ------------ HEADER ------------ */
 .main-header {
   margin-bottom: 60px;
+  
   /* для оформления схемы */
   background: rgba(255, 186, 255, 1);
 }
 
 .main-navigation {
   float: left;
-  width: 640px;
-  padding: 25px 10px;
-  
+  width: 700px;
+  padding: 15px 0px;
+
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
 
+ul {
+   list-style-type: none;
+}
+li {
+  display: inline-block;
+} 
+
+.button {
+  text-decoration: none;
+}
+
+/* тут все пункты меню не помещаются в ряд. но , предполагаю, когда задам шрифты для них, ширина блоков уменьшится и они встанут в одну строку 
+а еще не прижимаются до конца к левому краю контейнера */
+.main-navigation li {
+  margin-right: 40px; 
+  background: black;
+}
+
 .user-block {
   float: right;
-  width: 65px;
-  padding: 25px 10px;
-  
+  width: 70px;
+  padding: 15px 0px;
+
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
 
 /* ------------ MAIN (CATALOG)------------ */
 .catalog-header {
-  width: 940px;
-  padding: 0px 10px;
-  
+
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
 
-.main-content {
-  width: 960px;
-  margin: 30px auto;
-}
-
 .catalog-sidebar {
   float: left;
-  width: 168px; 
-  padding: 0 10px;
-  
+  width: 220px; 
+  margin-right: 20px;
+
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
 
 .catalog-content {
   float: right;
-  width: 720px;
-  
+  width: 700px;
+
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
@@ -98,22 +111,35 @@ h2 {
 .item {
   display: inline-block;
   width: 220px;
-  border: 10px solid transparent; /* не работает */
+  margin-right: 17px;
   vertical-align: top;
   
   background: rgba(215, 127, 173, 0.4);
-  border: 1px solid rgba(97, 201, 205, 0.8);
 }
-.item:nth-child(3n) {
-  margin-right: 0;
+
+.item:nth-of-type(3n) {
+  margin-right: 0px;
 } 
 
+.paginator {
+  float: left;
+  min-width:  194px;
+  margin-top: 26px;
+  margin-left: 0px;
+  margin-bottom: 47px;
+}
+
+.paginator li {
+  min-width: 43px;
+  height: 43px;
+  padding-right: 8px;
+  background: black;
+}
 
 /* ------------ MAIN (ITEM)------------ */
 .item-header {
   width: 940px;
-  padding: 0px 10px;
-  
+
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
@@ -121,8 +147,7 @@ h2 {
 .left-col {
   float: left;
   width: 460px;
-  padding: 0 10px;
-  
+
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
@@ -130,35 +155,34 @@ h2 {
 .right-col {
   float: right;
   width: 370px;
-  padding: 0 10px;
-  
+
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
 
-/*
+
 .small-img {
   display: inline-block;
   width: 140px;
-  margin-right: 20px;
+  /* почему-то не задает отступ у второго изображения */
+  margin-right: 17px; 
   vertical-align: top;
-  
+
   background: rgba(215, 127, 173, 0.4);
 }
-.small-img:nth-child(3n) {
-  margin-right: 0;
-} */
+
+.small-img:nth-of-type(3n) {
+  margin-right: 0px;
+} 
+
+
+
 
 /*------------ FOOTER ------------*/
-
-.footer-contacts .footer-social .footer-copyright {
-  min-height: 90px;
-}
-
 .main-footer {
   padding-top: 60px;
   padding-bottom: 37px;
-  
+
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
@@ -168,7 +192,7 @@ h2 {
   width: 310px;
   padding: 0 10px;
   margin-right: 70px;
-  
+
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
@@ -177,20 +201,27 @@ h2 {
   float: left;
   width: 140px;
   padding: 0 10px;
-  margin-right: 240px;
-  
+
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
 
 .footer-copyright {
-  float: left;
+  float: right;
   width: 140px;
   padding: 0 10px;
-  
+
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
+
+
+
+
+
+
+
+
 
 
 
