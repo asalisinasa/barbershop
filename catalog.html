@@ -47,10 +47,14 @@
       <ul class="breadcrumbs">
         <li><a class="button" href="#">ГЛАВНАЯ</a></li>
         <li><a class="button" href="#">МАГАЗИН</a></li>
+        <!--Нужно убрать ссылку вообще, так будет правильнее. Оставить только li с классом-->
         <li><a class="button active" href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
       </ul>
     </header>
 
+    <!-- Раньше тут был блок main-content, который оборачивал  .catalog-sidebar и .catalog-content.
+    Это было правильнее, потому что у тебя тут два блока с float, им необходим clearfix. А ты задаешь clearfix
+    блоку .catalog-sidebar, хотя у него внутри флоатов нет-->
     <aside class="catalog-sidebar clearfix">
       <form class="form-filter" method="post" action="URL">
         <div class="filter-brand">
