@@ -1,28 +1,28 @@
 ﻿body {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.4;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "PT Sans Narrow", "Arial" sans-serif;
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
 }
 
 h1 {
   font-size: 30px;
-  line-height: auto;
+  line-height: 1.2;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "PT Sans Narrow", "Arial" sans-serif;
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
 }
 
 h2 {
   font-size: 30px;
-  line-height: auto;
+  line-height: 1.2;
   color: #000000;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "PT Sans Narrow", "Arial" sans-serif;
+  font-family: "PT Sans Narrow", Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -60,17 +60,13 @@ h2 {
 ul {
    list-style-type: none;
 }
-li {
-  display: inline-block;
-} 
 
 .button {
   text-decoration: none;
 }
 
-/* тут все пункты меню не помещаются в ряд. но , предполагаю, когда задам шрифты для них, ширина блоков уменьшится и они встанут в одну строку 
-а еще не прижимаются до конца к левому краю контейнера */
 .main-navigation li {
+  display: inline-block;
   margin-right: 40px; 
   background: black;
 }
@@ -85,10 +81,12 @@ li {
 }
 
 /* ------------ MAIN (CATALOG)------------ */
-.catalog-header {
-
+.content-header {
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
+}
+.breadcrumbs li {
+  display: inline-block;
 }
 
 .catalog-sidebar {
@@ -111,13 +109,13 @@ li {
 .item {
   display: inline-block;
   width: 220px;
-  margin-right: 17px;
+  margin-right: 16px;
   vertical-align: top;
   
   background: rgba(215, 127, 173, 0.4);
 }
 
-.item:nth-of-type(3n) {
+.item:nth-child(3n) {
   margin-right: 0px;
 } 
 
@@ -130,6 +128,7 @@ li {
 }
 
 .paginator li {
+  display: inline-block;
   min-width: 43px;
   height: 43px;
   padding-right: 8px;
@@ -137,13 +136,6 @@ li {
 }
 
 /* ------------ MAIN (ITEM)------------ */
-.item-header {
-  width: 940px;
-
-  /* для оформления схемы */
-  background: rgba(13, 186, 255, 0.5);
-}
-
 .left-col {
   float: left;
   width: 460px;
@@ -160,23 +152,20 @@ li {
   background: rgba(13, 186, 255, 0.5);
 }
 
+/*** А чего тут не вышло? ***/
 
 .small-img {
   display: inline-block;
   width: 140px;
-  /* почему-то не задает отступ у второго изображения */
-  margin-right: 17px; 
+  margin-right: 16px;
   vertical-align: top;
 
   background: rgba(215, 127, 173, 0.4);
 }
 
-.small-img:nth-of-type(3n) {
-  margin-right: 0px;
+.small-img:nth-child(4n) {
+  margin-right: 0;
 } 
-
-
-
 
 /*------------ FOOTER ------------*/
 .main-footer {
@@ -214,18 +203,3 @@ li {
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
