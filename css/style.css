@@ -34,13 +34,13 @@ h2 {
   background: rgba(255, 191, 0, 0.5);
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* ------------ HEADER ------------ */
+/* --------------------------- HEADER --------------------------- */
 .main-header {
   margin-bottom: 60px;
   
@@ -57,12 +57,14 @@ h2 {
   background: rgba(255, 186, 255, 0.5);
 }
 
-ul {
-   list-style-type: none;
-}
-
 .button {
   text-decoration: none;
+}
+
+.main-navigation ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
 }
 
 .main-navigation li {
@@ -80,11 +82,19 @@ ul {
   background: rgba(255, 186, 255, 0.5);
 }
 
-/* ------------ MAIN (CATALOG)------------ */
+/* --------------------------- MAIN (CATALOG)--------------------------- */
 .content-header {
+  margin-bottom: 40px;
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
+
+.breadcrumbs {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
 .breadcrumbs li {
   display: inline-block;
 }
@@ -106,12 +116,17 @@ ul {
   background: rgba(13, 186, 255, 0.5);
 }
 
+.item-wraper {
+  font-size: 0px;
+}
 .item {
   display: inline-block;
   width: 220px;
-  margin-right: 16px;
+  margin-right: 20px;
   vertical-align: top;
+  font-size: 14px;
   
+  /* для оформления схемы */
   background: rgba(215, 127, 173, 0.4);
 }
 
@@ -120,11 +135,15 @@ ul {
 } 
 
 .paginator {
-  float: left;
-  min-width:  194px;
   margin-top: 26px;
   margin-left: 0px;
   margin-bottom: 47px;
+}
+
+.paginator ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
 }
 
 .paginator li {
@@ -134,8 +153,11 @@ ul {
   padding-right: 8px;
   background: black;
 }
+.paginator-button {
+  text-decoration: none;
+}
 
-/* ------------ MAIN (ITEM)------------ */
+/* --------------------------- MAIN (ITEM)--------------------------- */
 .left-col {
   float: left;
   width: 460px;
@@ -146,13 +168,11 @@ ul {
 
 .right-col {
   float: right;
-  width: 370px;
+  width: 390px;
 
   /* для оформления схемы */
   background: rgba(13, 186, 255, 0.5);
 }
-
-/*** А чего тут не вышло? ***/
 
 .small-img {
   display: inline-block;
@@ -167,7 +187,7 @@ ul {
   margin-right: 0;
 } 
 
-/*------------ FOOTER ------------*/
+/*--------------------------- FOOTER ---------------------------*/
 .main-footer {
   padding-top: 60px;
   padding-bottom: 37px;
@@ -179,7 +199,6 @@ ul {
 .footer-contacts {
   float: left;
   width: 310px;
-  padding: 0 10px;
   margin-right: 70px;
 
   /* для оформления схемы */
@@ -189,7 +208,6 @@ ul {
 .footer-social {
   float: left;
   width: 140px;
-  padding: 0 10px;
 
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);
@@ -198,7 +216,6 @@ ul {
 .footer-copyright {
   float: right;
   width: 140px;
-  padding: 0 10px;
 
   /* для оформления схемы */
   background: rgba(255, 186, 255, 0.5);

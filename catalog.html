@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>Барбершоп «Бородинский»</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head> 
 
@@ -40,18 +41,17 @@
     </div>
   </header>
 
-  
-  <main class="container clearfix">
+  <main class="main-content container clearfix">
     <header class="content-header">
       <h1 class="catalog-title">СРЕДСТВА ДЛЯ УХОДА</h1>
       <ul class="breadcrumbs">
-        <li><a class="button" href="#">ГЛАВНАЯ</a></li>
-        <li><a class="button" href="#">МАГАЗИН</a></li>
-        <li><a class="button active" href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+        <li><a href="#">ГЛАВНАЯ</a></li>
+        <li><a href="#">МАГАЗИН</a></li>
+        <li class="active">СРЕДСТВА ДЛЯ УХОДА</li>
       </ul>
     </header>
 
-    <aside class="catalog-sidebar clearfix">
+    <aside class="catalog-sidebar">
       <form class="form-filter" method="post" action="URL">
         <div class="filter-brand">
           <h3> ПРОИЗВОДИТЕЛИ:</h3>
@@ -158,10 +158,10 @@
 
       <div class="paginator">
         <ul>
-          <li><a class="button page-button" href="#">1</a></li>
-          <li><a class="button page-button active" href="#">2</a></li>
-          <li><a class="button page-button" href="#">3</a></li>
-          <li><a class="button page-button" href="#">4</a></li>
+          <li><a class="paginator-button page-button" href="#">1</a></li>
+          <li><a class="paginator-button page-button active" href="#">2</a></li>
+          <li><a class="paginator-button page-button" href="#">3</a></li>
+          <li><a class="paginator-button page-button" href="#">4</a></li>
         </ul>
       </div>
     </div>
@@ -179,9 +179,9 @@
 
       <section class="footer-social">
         <p>Давайте дружить!</p>
-        <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        <a href="#" class="social-button social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-button social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-button social-btn-inst">Инстаграм</a>
       </section>
 
       <section class="footer-copyright">
